@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    text-rendering: optimizeLegibility;
+    font-size: 16px;
+    font-family: 'Work Sans', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/*** CLEARFIX ****/
+
+.clearfix{
+    zoom: 1;
+}
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden;
+}
+
+.container{
+    display: flex;
+}
+.row.container{
+    margin: 0;
+}
+
+/*** SIDE BAR ****/
+
+.side-bar{
+    background-color: #000000;
+    color: #B29155;
+    float: left;
+    width: 35%;
+    padding-top: 20px;
+    border: 1px solid #B29155;
+    box-shadow: -5px 4px 4px #B29155 inset;
+}
+
+.side-bar .row {
+    max-width: 95%;
+}
+
+.col.side-bar{
+    margin-top: 0;
+}
+
+.header-image{
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    border: 1px solid #555;
+    border-radius: 90px;
+    margin: 0 auto;
+}
+
+.header-image img{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    opacity: .9;
+    transition: transform .5s, opacity .5s;
+}
+
+.header-image img:hover{
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+/*** SIDE BAR HEADINGS ****/
+
+.header-text,
+.languages-heading,
+.top-skills-heading,
+.personal-qualities-heading{
+    text-align: center;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.header-text h2{
+    font-size: 160%;
+}
+
+.header-text p{
+    color: #fff;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+.contact-box{
+    margin-bottom: 40px;
+}
+
+.contact-box p.phone{
+    color: #fff;
+}
+
+.social-box{
+    margin-bottom: 20px;
+}
+
+.social-links,
+.contact-links{
+    float: right;
+    list-style: none;
+    padding-right: 10px;
+}
+
+.social-links li,
+.contact-links li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited,
+.contact-links li a:link,
+.contact-links li a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-whatsapp,
+.fa-envelope{
+    transition: all .2s;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-whatsapp:hover,
+.fa-envelope:hover{
+    transform: scale(1.5);
+}
+
+.fa-linkedin:hover{
+    color: #0077B5;
+}
+
+.fa-github:hover{
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.fa-whatsapp:hover{
+    color: #25d366;
+}
+
+.fa-envelope:hover{
+    color: #ffffff;
+}
+
+.military-service-box {
+    margin: 20px 0;
+}
+
+.military-service-box p {
+    font-size: 85%;
+    font-weight: 600;
+}
+
+.military-service-text{
+    color: #fff;
+    float: right;
+    padding-right: 10px;
+}
+
+.languages-box {
+    padding-right: 10px;
+    list-style: none;
+    line-height: 1.5;
+}
+
+.languages-box .level p{
+    color: #fff;
+    text-align: center;
+}
+
+.top-skills,
+.personal-qualities{
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.top-skills li,
+.personal-qualities li{
+    display: inline-block;
+    color: #fff;
+    padding: 0 5px;
+    line-height: 1.5;
+}
+
+.top-skills li::before,
+.personal-qualities li::before{
+    content: '\23';
+    font-family: "Font Awesome 5 Free";
+    color: #B29155;
+    padding-right: 5px;
+}
+
+.personal-qualities li::before{
+    content: '\f005';
+}
+
+.main{
+    float: right;
+    width: 65%;
+}
+
+/*** SECTIONS ****/
+
+section{
+    margin: 40px 0;
+}
+
+section .row {
+    max-width: 100%;
+}
+/*** SECTIONS HEADINGS ****/
+
+.whoami-heading,
+.work-experience-heading,
+.education-heading,
+.certification-heading{
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 20px;
+    color: #B29155;
+}
+
+/*** WHO AM I SECTION ****/
+
+.whoami p,
+.work-experience p,
+.work-experience ul li{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.whoami p span,
+.work-experience p span,
+.work-experience ul li span,
+.education-text p span,
+.certification-text p span{
+    font-style: italic;
+    font-weight: 600;
+    color: #B29155;
+}
+
+.whoami p span.nextrole {
+    color: #000;
+    font-size: 105%;
+}
+
+/*** WORK EXPERIENCE ****/
+
+.work-experience p{
+    font-weight: 600;
+    display: inline-block;
+}
+
+.work-experience p.year{
+    float: right;
+}
+
+ .work-experience ul{
+     list-style: none;
+ }
+
+.work-experience ul li .row {
+    max-width: 100%;
+}
+
+ .work-experience ul li ul {
+     list-style: inside;
+     list-style-type: none;
+     margin: 5px;
+ }
+.work-experience ul li ul li{
+    line-height: 1.5;
+    padding: 5px;
+}
+ .work-experience ul li ul li::before{
+     content: '\f00c';
+     font-family: "Font Awesome 5 Free";
+     color: #B29155;
+ }
+
+ /*** EDUCATION SECTION ****/
+
+.education-text,
+.certification-text{
+    line-height: 1.2;
+}
+
+.education-text p,
+.certification-text p{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.education-text p.year,
+.certification-text p.year{
+    float: right;
+}
+
+.education img, .certification img {
+    width: 50%;
+    float: right;
+}
+/*** CERTIFICATIONS SECTION ****/
+
+.certificate {
+    float: right;
+    width: 90%;
+}
+/*
+footer{
+    text-align: center;
+    border: 1px solid #B29155;
+    box-shadow: 5px -4px 4px #B29155;
+    padding-top: 30px;
+} */
